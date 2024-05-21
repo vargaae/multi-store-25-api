@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "img2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "SKU": {
+      "type": "string"
+    },
+    "isAvailable": {
+      "type": "string"
+    },
+    "Colors": {
+      "type": "enumeration",
+      "enum": [
+        "Wood",
+        "Dark-Wood",
+        "Light-Wood",
+        "Oak",
+        "Black",
+        "White",
+        "Red",
+        "Blue",
+        "Green"
+      ]
+    },
+    "Brand": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "sub_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-category.sub-category"
+    },
+    "video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
