@@ -793,22 +793,24 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
   info: {
     singularName: 'category';
     pluralName: 'categories';
-    displayName: 'Category';
+    displayName: 'category';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Attribute.String;
-    sub_categories: Attribute.Relation<
-      'api::category.category',
-      'manyToMany',
-      'api::sub-category.sub-category'
-    >;
+    desc: Attribute.Text;
+    img: Attribute.Media;
     products: Attribute.Relation<
       'api::category.category',
       'manyToMany',
       'api::product.product'
+    >;
+    sub_categories: Attribute.Relation<
+      'api::category.category',
+      'manyToMany',
+      'api::sub-category.sub-category'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -833,7 +835,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
   info: {
     singularName: 'product';
     pluralName: 'products';
-    displayName: 'Product';
+    displayName: 'product';
     description: '';
   };
   options: {
@@ -843,25 +845,21 @@ export interface ApiProductProduct extends Schema.CollectionType {
     title: Attribute.String;
     desc: Attribute.Text;
     price: Attribute.Decimal;
+    isAvailable: Attribute.String;
+    isAvailableNumber: Attribute.Integer;
+    SKU: Attribute.String;
+    brand: Attribute.String;
+    colors: Attribute.Enumeration<
+      ['wood', 'dark-wood', 'white', 'black', 'red', 'blue', 'green', 'yellow']
+    >;
+    images: Attribute.Media;
+    video: Attribute.Media;
     img: Attribute.Media;
     img2: Attribute.Media;
-    images: Attribute.Media;
-    SKU: Attribute.String;
-    isAvailable: Attribute.String;
-    Colors: Attribute.Enumeration<
-      [
-        'Wood',
-        'Dark-Wood',
-        'Light-Wood',
-        'Oak',
-        'Black',
-        'White',
-        'Red',
-        'Blue',
-        'Green'
-      ]
-    >;
-    Brand: Attribute.String;
+    isNew: Attribute.Boolean & Attribute.DefaultTo<false>;
+    type: Attribute.String;
+    isSale: Attribute.Boolean & Attribute.DefaultTo<true>;
+    oldPrice: Attribute.Decimal;
     categories: Attribute.Relation<
       'api::product.product',
       'manyToMany',
@@ -872,7 +870,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'oneToOne',
       'api::sub-category.sub-category'
     >;
-    video: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -896,7 +893,7 @@ export interface ApiSubCategorySubCategory extends Schema.CollectionType {
   info: {
     singularName: 'sub-category';
     pluralName: 'sub-categories';
-    displayName: 'SubCategory';
+    displayName: 'subCategory';
     description: '';
   };
   options: {

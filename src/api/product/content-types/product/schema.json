@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product",
+    "displayName": "product",
     "description": ""
   },
   "options": {
@@ -20,6 +20,47 @@
     },
     "price": {
       "type": "decimal"
+    },
+    "isAvailable": {
+      "type": "string"
+    },
+    "isAvailableNumber": {
+      "type": "integer"
+    },
+    "SKU": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "colors": {
+      "type": "enumeration",
+      "enum": [
+        "wood",
+        "dark-wood",
+        "white",
+        "black",
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
     },
     "img": {
       "type": "media",
@@ -37,36 +78,19 @@
         "images"
       ]
     },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "isNew": {
+      "type": "boolean",
+      "default": false
     },
-    "SKU": {
+    "type": {
       "type": "string"
     },
-    "isAvailable": {
-      "type": "string"
+    "isSale": {
+      "type": "boolean",
+      "default": true
     },
-    "Colors": {
-      "type": "enumeration",
-      "enum": [
-        "Wood",
-        "Dark-Wood",
-        "Light-Wood",
-        "Oak",
-        "Black",
-        "White",
-        "Red",
-        "Blue",
-        "Green"
-      ]
-    },
-    "Brand": {
-      "type": "string"
+    "oldPrice": {
+      "type": "decimal"
     },
     "categories": {
       "type": "relation",
@@ -78,13 +102,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sub-category.sub-category"
-    },
-    "video": {
-      "allowedTypes": [
-        "videos"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }
