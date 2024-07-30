@@ -14,7 +14,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         products.map(async (product) => {
           const item = await strapi
             .service("api::product.product")
-            .findOne(product.SKU);
+            .findOne(product.sku);
 
           return {
             price_data: {
