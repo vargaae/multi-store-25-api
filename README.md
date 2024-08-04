@@ -1,47 +1,65 @@
+# MULTI-MICRO-STORE-24 FULLSTACK APPLICATION with headless CMS and microservices
+
  <div align="center">
-  <img alt="Application image" src="https://cdn.shopify.com/s/files/1/0070/7032/files/ecommerce_apps.jpg?v=1665592014" width="400" />
+  <img alt="Application image" src="https://cdn.shopify.com/s/files/1/0070/7032/files/ecommerce_apps.jpg?v=1665592014" />
 </div>
-<br>
   <div align="center">
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/-Redux-black?style=for-the-badge&logoColor=white&logo=redux&color=764ABC" alt="redux" />
+    <img src="https://img.shields.io/badge/-Styled-black?style=for-the-badge&logoColor=white&logo=styled&color=06B6D4" alt="styled" />
   </div>
 
-# ECOMMERCE 2024 FULLSTACK APPLICATION with headless CMS
-
-Features/Structure:
-- 🚀Redux for State Management<br> is set up in this branch (🪵18-Redux)
-- (Migrated from Context API), 
-- 🚀AUTHENTICATION->Sign Up with email, 
-- 🚀AUTHENTICATION->Log in with email, 
-- 🚀AUTHENTICATION->Sign Up and Log In with Google account, 
-- 🚀SHOP, 
-- 🚀CART+USERMENU DROPDOWNs, 
-- 🚀Adding to CART,
-- 🚀CHECKOUT,
-- 🚀CART & CHECKOUT functionality (adding and decreasing amount, priceCount, TotalPriceCount),
-- 🚀Database for products and users,
-- 🚀Styled components
-  
-## 🛠 Back End:
-- Strapi (NodeJS) - deployed on Render
-- Cloudinary plugin
-- PostgreSQL Database - deployed on Render
-## ⚙️ Deployment
-
-## 🛠 Front End:
-
-- React 18.2
-- Redux (Redux Toolkit)
-- SASS
-- styled components
-- Strapi connected
-
-## ECOMMERCE 2024 ClientSide Application - Screenshots
+## MULTI ECOMMERCE APPLICATION WITH MICROSERVICES
 
 <div align="center">
   <img alt="Application image" src="https://vargaae.hu/images/projects/e-comm-2024-git.png" width="700" />
 </div>
-[Deployed here]([https://ecommerce-2024-y49k.onrender.com/])
+
+You can check out the deployed application [here](https://ecommerce-2024-y49k.onrender.com/)
+->deployed on Render: ClientSide App+API+PostgreSQL DB
+
+Features/Structure:
+
+- 🚀React APP -> Redux for State Management,
+- 🚀STORE SERVICE: API and Database for products with headless CMS: Strapi and PostgreSQL database,
+- 🚀SHOP SERVICE: Database for products with Firebase,
+- 🚀AUTHENTICATION/USER SERVICE - USER SLICE,
+- 🚀AUTHENTICATION->Sign Up with email,
+- 🚀AUTHENTICATION->Log in with email,
+- 🚀AUTHENTICATION->Sign Up and Log In with Google account,
+- 🚀CART SERVICE - CART SLICE,
+- 🚀CART & CHECKOUT functionality (adding and decreasing amount, priceCount, TotalPriceCount),
+- 🚀Adding to CART,
+- 🚀CART+USERMENU DROPDOWNs,
+- 🚀CHECKOUT,
+- 🚀PAY WITH STRIPE,
+- 🚀CATEGORIES SERVICE - CATEGORIES SLICE,
+- 🚀Database for products and users with Firebase,
+- 🚀ProductPage,
+- 🚀AboutPage,
+- 🚀Styled components
+
+## 🛠 Back End - Services:
+
+- STORE \
+- NodeJS
+- Strapi
+- PostgreSQL
+- Stripe connected -> /order
+- SHOP \
+- Firebase
+- Firestore Database
+
+## 🛠 Front End:
+
+- React 18.2
+- Redux (+Redux Toolkit+Redux-Persist)
+- SASS
+- styled components
+- plugins(animation, sliders, icons)
+- Firebase connected
+- Strapi connected
+- Stripe connected
 
 # 🚀 Getting started with Strapi
 

@@ -36,14 +36,16 @@
     "colors": {
       "type": "enumeration",
       "enum": [
-        "wood",
-        "dark-wood",
+        "all",
+        "brown",
         "white",
         "black",
         "red",
         "blue",
         "green",
-        "yellow"
+        "yellow",
+        "wood",
+        "dark-wood"
       ]
     },
     "images": {
@@ -102,6 +104,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sub-category.sub-category"
+    },
+    "source": {
+      "type": "string"
     }
   }
 }

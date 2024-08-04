@@ -882,7 +882,18 @@ export interface ApiProductProduct extends Schema.CollectionType {
     SKU: Attribute.String;
     brand: Attribute.String;
     colors: Attribute.Enumeration<
-      ['wood', 'dark-wood', 'white', 'black', 'red', 'blue', 'green', 'yellow']
+      [
+        'all',
+        'brown',
+        'white',
+        'black',
+        'red',
+        'blue',
+        'green',
+        'yellow',
+        'wood',
+        'dark-wood'
+      ]
     >;
     images: Attribute.Media;
     video: Attribute.Media;
@@ -902,6 +913,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'oneToOne',
       'api::sub-category.sub-category'
     >;
+    source: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
