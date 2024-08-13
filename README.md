@@ -15,7 +15,7 @@
   <img alt="Application image" src="https://vargaae.hu/images/projects/e-comm-2024-git.png" width="700" />
 </div>
 
-You can check out the deployed application [here](https://ecommerce-2024-y49k.onrender.com/)
+You can check out the deployed application [here](https://multi-micro-store-24.onrender.com/)
 ->deployed on Render: ClientSide App+API+PostgreSQL DB
 
 Features/Structure:
