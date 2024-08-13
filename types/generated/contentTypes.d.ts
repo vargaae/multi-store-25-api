@@ -914,6 +914,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'api::sub-category.sub-category'
     >;
     source: Attribute.String;
+    portrait: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

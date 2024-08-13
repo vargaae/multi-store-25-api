@@ -107,6 +107,11 @@
     },
     "source": {
       "type": "string"
+    },
+    "portrait": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
