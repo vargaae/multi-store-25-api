@@ -22,7 +22,7 @@
 This project is an online B2C shopping application that contains a basic e-commerce’s
     functions from shopping to placing order with
     using microservices (!Demonstration only - Microservices are being further developed!).
-You can check out the deployed application [here](https://multi-micro-store-24.onrender.com)
+You can check out the deployed application [here](https://prod.dz2v7ea6a6ixu.amplifyapp.com)
 ->deployed on Render: ClientSide App+API+PostgreSQL DB
 
 ## 🛠 Features/Structure:
