@@ -1,8 +1,8 @@
 {
-  "name": "multimicro-store-24-api",
+  "name": "multistore-25-api",
   "private": true,
   "version": "1.8.1",
-  "description": "MULTIMICRO-STORE-24 application with Strapi",
+  "description": "MULTISTORE-25 application with Strapi",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
