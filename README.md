@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/-Stripe-black?style=for-the-badge&logoColor=white&logo=stripe&color=764ABC" alt="Stripe" />
   </div>
 
-# MULTI-MICRO-STORE-24 API - STORE SERVICE and Database for products with headless CMS: NodeJS/Strapi and PostgreSQL database
+# MULTISTORE-25 API - STORE SERVICE and Database for products with headless CMS: NodeJS/Strapi and PostgreSQL database
 
 ## MULTI ECOMMERCE APPLICATION WITH MICROSERVICES
 
